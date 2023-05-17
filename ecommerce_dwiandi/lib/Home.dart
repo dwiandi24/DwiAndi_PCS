@@ -1,6 +1,6 @@
 import 'package:ecommerce_dwiandi/main.dart';
 import 'package:flutter/material.dart';
-import 'package:ecommerce_dwiandi/secondscreen.dart';
+import 'package:ecommerce_dwiandi/Produk.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -66,7 +66,7 @@ class HomeScreen extends StatelessWidget {
                   child: Container(
                     child: ElevatedButton.icon(
                       onPressed: () {
-                        // Tambahkan kode Anda untuk tombol keempat di sini
+                      Navigator.of(context).pushNamed('/profil');
                       },
                       icon: Icon(Icons.person),
                       label: Text('Profil Saya'),

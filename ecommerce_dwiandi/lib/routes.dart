@@ -1,9 +1,10 @@
 import 'package:ecommerce_dwiandi/DetailProduct.dart';
 import 'package:ecommerce_dwiandi/Pesanan_saya.dart';
+import 'package:ecommerce_dwiandi/Profil.dart';
 import 'package:ecommerce_dwiandi/main.dart';
 import 'package:flutter/material.dart';
-import 'package:ecommerce_dwiandi/firstscreen.dart';
-import 'package:ecommerce_dwiandi/secondscreen.dart';
+import 'package:ecommerce_dwiandi/Home.dart';
+import 'package:ecommerce_dwiandi/Produk.dart';
 import 'package:ecommerce_dwiandi/Pesanan.dart';
 
 class RouteGenerator {
@@ -15,6 +16,8 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => HomeScreen());
       case '/products':
         return MaterialPageRoute(builder: (_) => ProductsScreen());
+      case '/profil':
+        return MaterialPageRoute(builder: (_) => ProfilePage());
       case '/product-details':
         if (args is Product) {
           return MaterialPageRoute(builder: (_) => ProductDetailsScreen(product: args));
